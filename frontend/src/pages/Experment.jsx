@@ -27,7 +27,7 @@ const Experment = (props) => {
   useEffect(() => {
     const fetchLanguages = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:3000/v1/language");
+        const response = await axios.get("http://116.203.117.190:3000/v1/language");
         console.log("response is ", response.data.results);
         setLanguages(response.data.results);
 
@@ -245,9 +245,9 @@ const Experment = (props) => {
       formData.append("teachingExperience", experianceJob);
       formData.append("resume", cvFile);
       // Here you can submit the form data to your backend endpoint using fetch or Axios
-      // const response = await fetch("http://127.0.0.1:3000/v1/person", {
+      // const response = await fetch("http://116.203.117.190:3000/v1/person", {
 
-      fetch("http://127.0.0.1:3000/v1/person", {
+      fetch("http://116.203.117.190:3000/v1/person", {
         method: "POST",
         // headers: {
         //   'Content-Type': 'multipart/form-data',

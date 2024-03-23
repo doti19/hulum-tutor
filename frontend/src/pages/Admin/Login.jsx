@@ -26,7 +26,7 @@ function Login() {
     try {
       //TODO : SAVE THE ACCESS TOKEN IN LOCAL STORAGE, AND ALWAYS SEND IT AS AUTHERIZATION HEADER WITH EVERY REQUEST
       await axios
-        .post("http://127.0.0.1:3000/v1/auth/login", {
+        .post("http://116.203.117.190:3000/v1/auth/login", {
           email,
           password,
         })

@@ -15,8 +15,7 @@ const Logout = ({ onConfirm, onCancel }) => {
     const token = cookies.get("access_token");
     const refresh = cookies.get("refresh_token");
     await axios
-      .post(
-        "http://127.0.0.1:3000/v1/auth/logout/",
+      .post("http://116.203.117.190:3000/v1/auth/logout/",
         {
           refreshToken: refresh,
         },
