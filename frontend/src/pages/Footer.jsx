@@ -22,30 +22,23 @@ const Footer = () => {
             </div>
 
             <div className="flex justify-center space-x-4 p-3 ">
-              <a href="#">
+              <a target="_blank" href="https://www.facebook.com/hulumtutors">
                 <img src={FacebookLink} alt="" />
               </a>
               {/* ----------------- */}
-              <a href="#">
-                <img src={InstagramLink} alt="" />
+              <a target="_blank" href="https://www.youtube.com/@hulumtutor">
+                <img src={YoutubeLink} alt="YouTube" />
               </a>
               {/* ----------------- */}
-              <a href="#">
-                <img src={Twitterink} alt="" />
-              </a>
-              {/* ----------------- */}
-              <a href="#">
-                <img src={YoutubeLink} alt="" />
-              </a>
-              {/* ----------------- */}
-              <a href="#">
-                <img src={PinterestLink} alt="" />
+              <a target="_blank" href="https://tiktok.com/@hulumtutors">
+                <img src={TiktokLink} alt="TikTok" />
               </a>
               {/* ----------------- */}
             </div>
             <div className="flex text-white  font-bold">
-              <p>Call us: </p>
-              <p>+251911121314</p>
+              <p>Phone Numbers: </p><br/>
+              <p>Eth: +251946364642</p>
+              <p>USA: +12023917988</p>
             </div>
           </div>
           {/* end of Social links */}

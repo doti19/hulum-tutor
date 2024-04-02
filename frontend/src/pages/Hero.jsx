@@ -9,11 +9,11 @@ const Hero = () => {
           {/* The Left Item */}
           <div className="md:flex flex-col mb-32 space-y-12 md:w-1/2 md:text-left">
             <h1 className="max-w-middle text-4xl  font-bold text-center md:text-5xl ">
-              Let's come together and learn something great
+              Free Education For All!
             </h1>
             <p className="max-w-sm text-lg text-center text-darkGrayishBlue md:text-left">
-              at HuLuM we make things simpler so that you can comprehend,
-              understand ,and Innovate with the Genius in You.
+              At Hulum Tutors, we simplify learning for all, unlocking your genius through
+              accessibility, understanding, and creativity.
             </p>
             <div className=" flex justify-center md:justify-start">
               <a
@@ -24,14 +24,10 @@ const Hero = () => {
               </a>
             </div>
             <p className="max-w-md text-lg text-center text-darkGrayishBlue md:text-left">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Excepturi id vitae, minus facilis dolor, repellendus, expedita ad
-              consequatur aliquid mollitia hic voluptatibus dolores recusandae
-              eius quas! Odit velit dolores incidunt. Lorem ipsum dolor, sit
-              amet consectetur adipisicing elit. Excepturi id vitae, minus
-              facilis dolor, repellendus, expedita ad consequatur aliquid
-              mollitia hic voluptatibus dolores recusandae eius quas! Odit velit
-              dolores incidunt.
+              Of all regions, sub-Saharan Africa has the highest rates of education exclusion
+              Over one-fifth of children between the ages of about 6 and 11 are out of school,
+              followed by one-third of youth between the ages of about 12 and 14. According to
+              UIS data, almost 60% of youth between the ages of about 15 and 17 are not in school.
             </p>
           </div>
           <div className="  md:w-1/2 ">

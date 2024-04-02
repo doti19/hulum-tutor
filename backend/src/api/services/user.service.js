@@ -17,21 +17,18 @@ const createUser = async (userBody, user) => {
   //   throw new ApiError({status: httpStatus.FORBIDDEN, message: 'you cant create a user with that role'}); 
 
   // }
-  const userCount = await User.countDocuments({role: 'admin'});
-  if(userCount!=0){
-    throw new ApiError({status: httpStatus.FORBIDDEN, message: 'you cant create a user'});
+  
+  if(userBody.role){
+    
+    if (await User.isEmailTaken(userBody.email)) {
+      throw new ApiError({status: httpStatus.BAD_REQUEST, message:'Email already taken', isPublic: true});
+    }
+    
+    
+    return User.create(userBody);
+  }else{
+    throw new ApiError({status: httpStatus.FORBIDDEN, message: 'You Cant create a user'});
   }
-
-  const userCount2 = await User.countDocuments({role: 'super_admin'});
-  if(userCount2!=0){
-    throw new ApiError({status: httpStatus.FORBIDDEN, message: 'you cant create a user'});
-  }
-  if (await User.isEmailTaken(userBody.email)) {
-    throw new ApiError({status: httpStatus.BAD_REQUEST, message:'Email already taken', isPublic: true});
-  }
-
-
-  return User.create(userBody);
   //  }else{
   //   throw new ApiError({status: httpStatus.FORBIDDEN, message: 'you cant create a user'}); 
   //  }
