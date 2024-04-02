@@ -28,11 +28,11 @@ const Footer = () => {
               </a>
               {/* ----------------- */}
               <a target="_blank" href="https://www.youtube.com/@hulumtutor">
-                <img src={YoutubeLink} alt="YouTube" />
+                <img src={YoutubeLink} className="h-6" alt="YouTube" />
               </a>
               {/* ----------------- */}
               <a target="_blank" href="https://tiktok.com/@hulumtutors">
-                <img src={TiktokLink} alt="TikTok" />
+                <img src={TiktokLink} className="h-6" alt="TikTok" />
               </a>
               {/* ----------------- */}
             </div>
