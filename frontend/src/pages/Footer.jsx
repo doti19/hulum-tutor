@@ -4,6 +4,7 @@ import FacebookLink from "../assets/icon-facebook.svg";
 import InstagramLink from "../assets/icon-instagram.svg";
 import PinterestLink from "../assets/icon-pinterest.svg";
 import Twitterink from "../assets/icon-twitter.svg";
+import TiktokLink from "../assets/icon-tiktok.svg";
 import YoutubeLink from "../assets/icon-youtube.svg";
 
 const Footer = () => {
