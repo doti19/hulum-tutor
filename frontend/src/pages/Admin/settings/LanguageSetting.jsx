@@ -17,7 +17,7 @@ const LanguageSetting = () => {
     try {
       //TODO : SAVE THE ACCESS TOKEN IN LOCAL STORAGE, AND ALWAYS SEND IT AS AUTHERIZATION HEADER WITH EVERY REQUEST
        const token = cookies.get('access_token');
-      await axios.get("http://116.203.117.190:3000/v1/language",).then((res)=>{
+      await axios.get("https://116.203.117.190:3000/v1/language",).then((res)=>{
         
           if(res){
             setLanguages(res.data.results)
@@ -42,7 +42,7 @@ const LanguageSetting = () => {
     e.preventDefault();
     const token = cookies.get('access_token');
     
-    await axios.post("http://116.203.117.190:3000/v1/language",
+    await axios.post("https://116.203.117.190:3000/v1/language",
     {name: inputValue},
     { headers: { 'Authorization': 'Bearer ' + token },} )
     .then((res)=>{
