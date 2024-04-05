@@ -8,7 +8,7 @@ const Exportpage = () => {
   async function exportData() {
     const token = cookies.get("access_token");
     await axios
-      .get("https://116.203.117.190:3000/v1/person/export/", {
+      .get("http://116.203.117.190:3000/v1/person/export/", {
         headers: { Authorization: "Bearer " + token },
         responseType: "blob",
       })

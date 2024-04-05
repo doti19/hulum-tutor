@@ -11,7 +11,7 @@ const Table = () => {
         //TODO : SAVE THE ACCESS TOKEN IN LOCAL STORAGE, AND ALWAYS SEND IT AS AUTHERIZATION HEADER WITH EVERY REQUEST
         const token = cookies.get("access_token");
         await axios
-          .get("https://116.203.117.190:3000/v1/person", {
+          .get("http://116.203.117.190:3000/v1/person", {
             headers: { Authorization: "Bearer " + token },
           })
           .then((res) => {
@@ -42,7 +42,7 @@ const Table = () => {
   async function downloadCV(id, firstName, lastName) {
     const token = cookies.get("access_token");
     await axios
-      .get("https://116.203.117.190:3000/v1/person/file/" + id, {
+      .get("http://116.203.117.190:3000/v1/person/file/" + id, {
         headers: { Authorization: "Bearer " + token },
         responseType: "blob",
       })

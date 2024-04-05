@@ -4,6 +4,9 @@ const { port, env } = require("./config/config");
 const logger = require("./config/logger");
 const app = require("./config/express");
 const mongoose = require("./config/mongoose");
+const https = require("https");
+const fs = require('fs');
+const path = require('path');
 //open mongoose connection
 mongoose.connect();
 
@@ -31,6 +34,14 @@ mongoose.connect();
 // }
 // mySeeder();
 //listen to requests
+const options = {
+    key: fs.readFileSync(path.join(__dirname, "../cert/key.pem")),
+    cert: fs.readFileSync(path.join(__dirname, "../cert/cert.pem")),
+    passphrase: "mehari"
+}
+console.log(options);
+const server = https.createServer(options,app);
+
 app.listen(port, () => logger.info(`server started on port ${port} (${env})`));
 
 // const express = require("express");

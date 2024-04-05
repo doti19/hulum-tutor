@@ -5,6 +5,8 @@ frontend/package-lock.json
 */yarn.lock
 frontend/yarn.lock
 
+# ssl certificate for backend
+backend/cert/
 # Environment variables
 backend/.env
 frontend/.env
